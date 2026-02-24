@@ -2,6 +2,7 @@ use std::env;
 use std::error::Error;
 use std::fs;
 use std::process;
+use minigrep::search;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -18,9 +19,11 @@ fn main() {
 }
 
 fn run(config: Config) -> Result<(), Box<dyn Error>> {
-    let content = fs::read_to_string(&config.file_path)?;
+    let contents = fs::read_to_string(&config.file_path)?;
 
-    println!("\n{}", content);
+    for line in search(&config.query, &contents) {
+        println!("{}", line);
+    }
 
     Ok(())
 }
