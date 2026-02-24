@@ -1,0 +1,89 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="absl-py" />
+          <option value="attrs" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="charset-normalizer" />
+          <option value="contourpy" />
+          <option value="cycler" />
+          <option value="dnspython" />
+          <option value="filelock" />
+          <option value="flatbuffers" />
+          <option value="fonttools" />
+          <option value="fsspec" />
+          <option value="hf-xet" />
+          <option value="huggingface-hub" />
+          <option value="idna" />
+          <option value="importlib_resources" />
+          <option value="jax" />
+          <option value="jaxlib" />
+          <option value="Jinja2" />
+          <option value="kiwisolver" />
+          <option value="MarkupSafe" />
+          <option value="matplotlib" />
+          <option value="mediapipe" />
+          <option value="ml_dtypes" />
+          <option value="mpmath" />
+          <option value="networkx" />
+          <option value="numpy" />
+          <option value="nvidia-cublas-cu12" />
+          <option value="nvidia-cuda-cupti-cu12" />
+          <option value="nvidia-cuda-nvrtc-cu12" />
+          <option value="nvidia-cuda-runtime-cu12" />
+          <option value="nvidia-cudnn-cu12" />
+          <option value="nvidia-cufft-cu12" />
+          <option value="nvidia-cufile-cu12" />
+          <option value="nvidia-curand-cu12" />
+          <option value="nvidia-cusolver-cu12" />
+          <option value="nvidia-cusparse-cu12" />
+          <option value="nvidia-cusparselt-cu12" />
+          <option value="nvidia-nccl-cu12" />
+          <option value="nvidia-nvjitlink-cu12" />
+          <option value="nvidia-nvshmem-cu12" />
+          <option value="nvidia-nvtx-cu12" />
+          <option value="opencv-contrib-python" />
+          <option value="opt_einsum" />
+          <option value="packaging" />
+          <option value="pillow" />
+          <option value="protobuf" />
+          <option value="pycparser" />
+          <option value="pygame" />
+          <option value="pymongo" />
+          <option value="pyparsing" />
+          <option value="python-dateutil" />
+          <option value="PyYAML" />
+          <option value="regex" />
+          <option value="requests" />
+          <option value="safetensors" />
+          <option value="scipy" />
+          <option value="sentencepiece" />
+          <option value="setuptools" />
+          <option value="six" />
+          <option value="sounddevice" />
+          <option value="soundfile" />
+          <option value="sympy" />
+          <option value="tokenizers" />
+          <option value="torch" />
+          <option value="tqdm" />
+          <option value="transformers" />
+          <option value="triton" />
+          <option value="typing_extensions" />
+          <option value="urllib3" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
