@@ -1,4 +1,5 @@
 use std::env;
+use std::error::Error;
 use std::fs;
 use std::process;
 
@@ -10,14 +11,18 @@ fn main() {
         process::exit(1);
     });
 
-    run(config);
+    if let Err(e) = run(config) {
+        println!("Application error: {}", e);
+        process::exit(1);
+    }
 }
 
-fn run(config: Config) {
-    let content =
-        fs::read_to_string(&config.file_path).expect("Should have been able to read the file");
+fn run(config: Config) -> Result<(), Box<dyn Error>> {
+    let content = fs::read_to_string(&config.file_path)?;
 
     println!("\n{}", content);
+
+    Ok(())
 }
 
 #[derive(Debug)]
