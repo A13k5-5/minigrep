@@ -45,11 +45,11 @@ impl Config {
 
         let query = match args.next() {
             Some(arg) => arg,
-            None => return Err("Didn't get a query string")
+            None => return Err("Didn't get a query string"),
         };
         let file_path = match args.next() {
             Some(arg) => arg,
-            None => return Err("Didn't get a file path")
+            None => return Err("Didn't get a file path"),
         };
 
         let ignore_case = env::var("IGNORE_CASE").is_ok();
